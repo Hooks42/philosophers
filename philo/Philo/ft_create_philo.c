@@ -6,7 +6,7 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 14:11:12 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/19 16:30:28 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/21 10:52:56 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,6 @@ void	ft_create_philo(t_data	*data)
 	}
 	philo->next = begin_list;
 	data->philo = begin_list;
-	//create_mutex
-	//create_thread
+	ft_create_mutexes(data);
+	ft_create_threads(data);
 }

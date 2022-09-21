@@ -6,7 +6,7 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 16:46:57 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/19 17:46:06 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/21 10:46:35 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,6 +105,7 @@ void	*ft_only_one_philo(void	*ptr);
 void	ft_init(int	argc, char *argv[], t_data	*data);
 void	ft_create_philo(t_data	*data);
 void	ft_join_threads(t_data	*data);
+void	ft_usleep(long	time);
 void	ft_create_threads(t_data *data);
 void	ft_generate_forks(t_data *data);
 void	ft_create_mutexes(t_data *data);
@@ -114,6 +115,11 @@ void	ft_unlock_mutex(pthread_mutex_t *mutex);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 void	ft_write_logs(int	id, char *log, t_data *data);
 void	ft_lock_forks(int *right, int *left, t_data *data, t_philo *philo);
-
+void	ft_eat(t_data *data, t_philo *philo);
+int 	ft_check_if_dead(t_data *data, t_philo  *philo);
+int 	ft_check_if_everyone_has_eaten(t_data *data);
+void    *ft_start_simulation(void *ptr);
+void    ft_end_simulation(t_data *data);
+void    *ft_check_end(void *ptr);
 
 #endif

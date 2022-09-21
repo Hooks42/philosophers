@@ -6,33 +6,49 @@
 #    By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/09 15:47:28 by ceatgie           #+#    #+#              #
-#    Updated: 2022/09/19 16:43:51 by ceatgie          ###   ########.fr        #
+#    Updated: 2022/09/21 10:54:18 by ceatgie          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	=	philosophers
 
 SRCS	=	main.c\
-			Parsing/ft_error_message.c\
-			Parsing/ft_parse_input.c\
+			Actions/ft_eat.c\
+			Actions/ft_lock_forks.c\
+			Check/ft_check_end.c\
+			Check/ft_check_if_dead.c\
+			Check/ft_check_if_everyone_has_eaten.c\
+			Libft/ft_atoi.c\
 			Libft/ft_putstr_fd.c\
 			Libft/ft_strlen.c\
-			Libft/ft_atoi.c\
-			Philo/philosophers.c\
+			Libft/ft_strncmp.c\
+			Mutexes/ft_create_mutexes.c\
+			Mutexes/ft_destroy_mutex.c\
+			Mutexes/ft_generate_forks.c\
+			Mutexes/ft_lock_mutex.c\
+			Mutexes/ft_unlock_mutex.c\
+			Parsing/ft_error_message.c\
+			Parsing/ft_parse_input.c\
 			Philo/ft_add_philo.c\
-			Philo/ft_only_one_philo.c\
 			Philo/ft_create_philo.c\
+			Philo/ft_only_one_philo.c\
+			Philo/philosophers.c\
+			Simulation/ft_end_simulation.c\
+			Simulation/ft_start_simulation.c\
+			Threads/ft_create_threads.c\
+			Threads/ft_join_threads.c\
 			Utils/ft_error_msg.c\
 			Utils/ft_get_time.c\
 			Utils/ft_init.c\
 			Utils/ft_usleep.c\
+			Utils/ft_write_logs.c\
 
 
 OBJS= $(SRCS:.c=.o)
 
 CC		=	gcc
 
-CFLAGS	=	-Wall -Werror -Wextra -pthread
+CFLAGS	=	-Wall -Werror -Wextra -pthread -g3
 .c.o:
 		${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
 

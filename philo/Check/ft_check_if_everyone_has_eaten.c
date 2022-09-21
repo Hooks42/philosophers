@@ -1,30 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_create_threads.c                                :+:      :+:    :+:   */
+/*   ft_check_if_everyone_has_eaten.c                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/19 16:50:19 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 10:46:16 by ceatgie          ###   ########.fr       */
+/*   Created: 2022/09/21 09:48:11 by ceatgie           #+#    #+#             */
+/*   Updated: 2022/09/21 10:42:28 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
 
-void	ft_create_threads(t_data *data)
+int ft_check_if_everyone_has_eaten(t_data *data)
 {
-	int	i;
+    int var;
 
-	i = 0;
-	data->t0 = ft_get_time(0);
-	while (i < data->nb_philo)
-	{
-		if (pthread_create(&(data->philo->thread), NULL, ft_start_simulation, data->philo))
-			ft_error_msg(THREAD_ERROR);
-		data->philo = data->philo->next;
-		i++;
-	}
-	if (pthread_create(&(data->thread), NULL, ft_check_end, data))
-		ft_error_msg(THREAD_ERROR);
+    ft_lock_mutex(&data->check_everyone_has_eaten);
+    var = data->everyone_has_eaten;
+    ft_unlock_mutex(&data->check_everyone_has_eaten);
+    if (var == data->nb_philo)
+        return (1);
+    return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 16:45:21 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/19 16:49:14 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/21 10:46:55 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	ft_join_threads(t_data	*data)
 	}
 	while (i < data->nb_philo)
 	{
-		if (ptread_join(data->philo->thread, NULL))
+		if (pthread_join(data->philo->thread, NULL))
 			ft_error_msg(JOIN_THREAD_ERROR);
 		data->philo = data->philo->next;
 		i++;
