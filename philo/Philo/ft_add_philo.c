@@ -6,7 +6,7 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 14:14:45 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 11:20:33 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/21 17:10:12 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ t_philo	*ft_add_philo(int id, t_data *data)
 {
 	t_philo	*philo;
 
-	philo = malloc(sizeof(t_philo) * 1);
+	philo = malloc(sizeof(t_philo));
 	if (!philo)
 		ft_error_msg(MALLOC_ERROR);
 	philo->philo_id = id;

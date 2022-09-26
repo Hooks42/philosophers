@@ -6,11 +6,16 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 17:27:51 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 10:12:56 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/21 18:17:36 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
+
+/*
+**	Calls all the functions 
+**	needed by the program
+*/
 
 void	philosophers(int argc, char *argv[])
 {

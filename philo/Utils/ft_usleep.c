@@ -6,13 +6,13 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 16:20:18 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/19 16:36:58 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/21 17:38:49 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
 
-void	ft_usleep(long	time)
+void	ft_usleep(long time)
 {
 	long	t;
 

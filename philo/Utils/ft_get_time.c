@@ -6,13 +6,13 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 15:55:51 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/19 16:19:55 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/21 17:38:30 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
 
-long	ft_get_time(long	t0)
+long	ft_get_time(long t0)
 {
 	struct timeval	time;
 

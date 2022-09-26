@@ -6,13 +6,13 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 12:59:34 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/19 16:43:28 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/21 17:38:22 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
 
-void	ft_init(int	argc, char *argv[], t_data	*data)
+void	ft_init(int argc, char *argv[], t_data *data)
 {
 	data->argc = argc;
 	data->argv = argv;
@@ -26,5 +26,5 @@ void	ft_init(int	argc, char *argv[], t_data	*data)
 	data->t0 = 0;
 	if (data->argv[5])
 		data->meal_number = ft_atoi(data->argv[5]);
-	ft_create_philo(data);
+	ft_create_philos(data);
 }

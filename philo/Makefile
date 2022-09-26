@@ -6,7 +6,7 @@
 #    By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/09 15:47:28 by ceatgie           #+#    #+#              #
-#    Updated: 2022/09/21 10:54:18 by ceatgie          ###   ########.fr        #
+#    Updated: 2022/09/21 18:03:21 by ceatgie          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ SRCS	=	main.c\
 			Parsing/ft_error_message.c\
 			Parsing/ft_parse_input.c\
 			Philo/ft_add_philo.c\
-			Philo/ft_create_philo.c\
+			Philo/ft_create_philos.c\
 			Philo/ft_only_one_philo.c\
 			Philo/philosophers.c\
 			Simulation/ft_end_simulation.c\
@@ -49,6 +49,7 @@ OBJS= $(SRCS:.c=.o)
 CC		=	gcc
 
 CFLAGS	=	-Wall -Werror -Wextra -pthread -g3
+
 .c.o:
 		${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
 

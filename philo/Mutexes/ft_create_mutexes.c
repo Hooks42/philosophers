@@ -6,7 +6,7 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 16:58:46 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/19 17:01:51 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/21 17:09:06 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,4 @@ void	ft_create_mutexes(t_data *data)
 		ft_error_msg(MUTEX_ERROR);
 	if (pthread_mutex_init(&(data->check_everyone_has_eaten), NULL))
 		ft_error_msg(MUTEX_ERROR);
-	
 }

@@ -6,7 +6,7 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 17:45:04 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/14 18:22:07 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/21 17:09:35 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void	ft_parse_input(char *argv[])
 		{
 			if (!(argv[i][j] >= '0' && argv[i][j] <= '9'))
 			{
+				write(2, RED, ft_strlen(RED));
 				ft_putstr_fd("Error: Please write only number in the ", 2);
 				ft_putstr_fd("program input\n", 2);
 				exit(ERROR_ARGV);

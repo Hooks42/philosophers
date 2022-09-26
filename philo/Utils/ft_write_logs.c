@@ -6,13 +6,13 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 17:07:54 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/19 17:31:17 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/21 17:38:38 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
 
-void	ft_write_logs(int	id, char *log, t_data *data)
+void	ft_write_logs(int id, char *log, t_data *data)
 {
 	int		i;
 	char	*color;

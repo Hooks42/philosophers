@@ -6,7 +6,7 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 16:46:57 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 10:46:35 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/21 17:49:48 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,6 @@
 
 # define ERROR_ARGC 1
 # define ERROR_ARGV 2
-# define N_ARGS_ERROR "Wrong numbers of arguments.\n"
-# define ARG_ERROR "Invalid argument.\n"
 # define MALLOC_ERROR "Malloc error.\n"
 # define MUTEX_ERROR "Creating mutex.\n"
 # define LOCK_MUTEX_ERROR "Locking mutex.\n"
@@ -59,7 +57,9 @@
 # define BLUE "\033[1;34m"
 # define RESET	"\033[0m"
 
-typedef	struct s_philo
+//	STRUCT PHILO
+
+typedef struct s_philo
 {
 	int				philo_id;
 	int				has_eaten;
@@ -70,7 +70,9 @@ typedef	struct s_philo
 	struct s_data	*data;
 }					t_philo;
 
-typedef	struct s_data
+//	STRUCT DATA
+
+typedef struct s_data
 {
 	int				nb_philo;
 	long			time_to_eat;
@@ -91,35 +93,60 @@ typedef	struct s_data
 	char			**argv;
 }					t_data;
 
+//	ACTIONS
 
-void	ft_putstr_fd(char *s, int fd);
-void	ft_error_message(void);
-void	ft_parse_input(char *argv[]);
-void	philosophers(int argc, char *argv[]);
-size_t	ft_strlen(const char *str);
+void	ft_eat(t_data *data, t_philo *philo);
+void	ft_lock_forks(int *right, int *left, t_data *data, t_philo *philo);
+
+// CHECK
+
+void	*ft_check_end(void *ptr);
+int		ft_check_if_dead(t_data *data, t_philo *philo);
+int		ft_check_if_everyone_has_eaten(t_data *data);
+
+// LIBFT
+
 int		ft_atoi(const char *str);
-t_philo	*ft_add_philo(int id, t_data *data);
-void	ft_error_msg(char *str);
-long	ft_get_time(long	t0);
-void	*ft_only_one_philo(void	*ptr);
-void	ft_init(int	argc, char *argv[], t_data	*data);
-void	ft_create_philo(t_data	*data);
-void	ft_join_threads(t_data	*data);
-void	ft_usleep(long	time);
-void	ft_create_threads(t_data *data);
-void	ft_generate_forks(t_data *data);
+void	ft_putstr_fd(char *s, int fd);
+size_t	ft_strlen(const char *str);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+
+//	MUTEXES
+
 void	ft_create_mutexes(t_data *data);
 void	ft_destroy_mutex(pthread_mutex_t *mutex);
+void	ft_generate_forks(t_data *data);
 void	ft_lock_mutex(pthread_mutex_t *mutex);
 void	ft_unlock_mutex(pthread_mutex_t *mutex);
-int		ft_strncmp(const char *s1, const char *s2, size_t n);
-void	ft_write_logs(int	id, char *log, t_data *data);
-void	ft_lock_forks(int *right, int *left, t_data *data, t_philo *philo);
-void	ft_eat(t_data *data, t_philo *philo);
-int 	ft_check_if_dead(t_data *data, t_philo  *philo);
-int 	ft_check_if_everyone_has_eaten(t_data *data);
-void    *ft_start_simulation(void *ptr);
-void    ft_end_simulation(t_data *data);
-void    *ft_check_end(void *ptr);
+
+//	PARSING
+
+void	ft_error_message(void);
+void	ft_parse_input(char *argv[]);
+
+//	PHILO
+
+t_philo	*ft_add_philo(int id, t_data *data);
+void	ft_create_philos(t_data	*data);
+void	*ft_only_one_philo(void	*ptr);
+void	philosophers(int argc, char *argv[]);
+
+//	SIMULATION
+
+void	ft_end_simulation(t_data *data);
+void	*ft_start_simulation(void *ptr);
+
+//	THREADS
+
+void	ft_create_threads(t_data *data);
+void	ft_join_threads(t_data	*data);
+
+//	UTILS
+
+void	ft_error_msg(char *str);
+long	ft_get_time(long t0);
+void	ft_init(int argc, char *argv[], t_data *data);
+void	ft_usleep(long time);
+void	ft_write_logs(int id, char *log, t_data *data);
 
 #endif
