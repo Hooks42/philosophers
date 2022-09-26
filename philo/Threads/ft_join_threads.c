@@ -6,11 +6,24 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 16:45:21 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 17:36:40 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/26 10:24:20 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
+
+/*
+**	If there is only one philosopher asked join the thread
+**	then exit the function
+**	
+**	=========================================================
+**
+**	otherwise join the threads of all the philosophers asked
+**	
+**	=========================================================
+**	
+**	Then Join the check thread
+*/
 
 void	ft_join_threads(t_data	*data)
 {

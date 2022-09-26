@@ -6,11 +6,15 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 09:25:01 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 17:36:31 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/26 10:39:50 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
+
+/*
+**	Return 1 or 0 if a philosopher is dead
+*/
 
 static int	ft_check_if_philo_die(t_data *data)
 {
@@ -23,6 +27,15 @@ static int	ft_check_if_philo_die(t_data *data)
 		return (0);
 	return (1);
 }
+
+/*
+**	Starts the simulation
+**	calls the function ft_eat
+**	Stops if everyone has eaten the maximum number of meal
+**	After eating makes the philosopher sleep for time_to_sleep time
+**	Then make the philosopher think until he can eat again
+**	All while checking if someone has not died in the meantime
+*/
 
 void	*ft_start_simulation(void *ptr)
 {

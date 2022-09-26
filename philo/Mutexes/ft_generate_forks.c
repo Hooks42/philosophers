@@ -6,11 +6,15 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 16:55:50 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 17:09:25 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/26 10:00:09 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
+
+/*
+**	Create the mutex for the forks associated to each philo
+*/
 
 void	ft_generate_forks(t_data *data)
 {

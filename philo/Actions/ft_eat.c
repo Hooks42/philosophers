@@ -6,11 +6,25 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 17:39:03 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 16:58:40 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/26 11:13:59 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
+
+/*
+**	Call function ft_lock_forks
+**	So the philosopher can take left and right fork
+**	Set the time of the actual meal
+**	Then put the forks back on the table
+**	
+**	===========================================================
+**	
+**	If the philosopher has eaten as many times as the maximum
+**	Number of meals then the everyone_has_eaten variable
+**	is incremented by 1
+
+*/
 
 void	ft_eat(t_data *data, t_philo *philo)
 {

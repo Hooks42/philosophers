@@ -6,11 +6,16 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 16:58:46 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 17:09:06 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/26 09:49:36 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
+
+/*
+**	Create the mutex for the forks and
+**	all the mutexes for the check variables
+*/
 
 void	ft_create_mutexes(t_data *data)
 {

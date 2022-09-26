@@ -6,11 +6,15 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 14:14:45 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 17:10:12 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/26 09:13:22 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
+
+/*
+**	Initializes the entire philosophy structure
+*/
 
 t_philo	*ft_add_philo(int id, t_data *data)
 {

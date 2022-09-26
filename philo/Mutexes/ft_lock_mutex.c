@@ -6,11 +6,15 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 17:04:11 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 17:09:14 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/26 09:56:37 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
+
+/*
+**	Lock the given mutex
+*/
 
 void	ft_lock_mutex(pthread_mutex_t *mutex)
 {

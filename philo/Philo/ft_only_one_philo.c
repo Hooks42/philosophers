@@ -6,11 +6,15 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 16:22:10 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 17:10:17 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/26 09:31:49 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
+
+/*
+**	The philosopher takes only one fork then dies
+*/
 
 void	*ft_only_one_philo(void	*ptr)
 {

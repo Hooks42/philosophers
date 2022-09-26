@@ -6,11 +6,16 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 12:59:34 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 17:38:22 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/26 08:53:14 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
+
+/*
+**	Initializes the entire data structure and
+**	calls the philosophers creation function
+*/
 
 void	ft_init(int argc, char *argv[], t_data *data)
 {

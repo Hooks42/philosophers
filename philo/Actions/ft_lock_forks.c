@@ -6,11 +6,15 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 17:40:45 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 16:58:43 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/26 11:38:12 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
+
+/*
+**	Function which is used for a philosopher to take the two forks to eat
+*/
 
 void	ft_lock_forks(int *right, int *left, t_data *data, t_philo *philo)
 {

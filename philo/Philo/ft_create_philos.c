@@ -6,11 +6,24 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 14:11:12 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 17:12:23 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/26 09:33:49 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
+
+/*
+**	If the number of philosophers requested is 1
+**	then we set the time to 0
+**	then we create a single thread which performs the function 
+**	ft_only_one_philo
+**	
+**	=========================================================================
+**	
+**	Otherwise, as long as all the philosophers asked have not been created,
+**	we create them. 
+**	We then create the mutexes and the threads
+*/
 
 void	ft_create_philos(t_data	*data)
 {

@@ -6,15 +6,23 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 17:27:51 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 18:17:36 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/26 10:31:10 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
 
 /*
-**	Calls all the functions 
-**	needed by the program
+**	Calls all the functions needed by the program
+**	
+**	=================================================
+**	
+**	Check if there is the right number of arguments
+**	Then check if there is no error in the input
+**	Then initialize the data structure
+**	Then join the threads
+**	Wait for 10 milliseconds
+**	end up ending the simulation
 */
 
 void	philosophers(int argc, char *argv[])

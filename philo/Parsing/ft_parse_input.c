@@ -6,11 +6,15 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 17:45:04 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 17:09:35 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/26 09:24:07 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
+
+/*
+**	Check if there is anything other than numbers in the input
+*/
 
 void	ft_parse_input(char *argv[])
 {

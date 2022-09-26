@@ -6,11 +6,15 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 15:55:51 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 17:38:30 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/26 09:23:42 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
+
+/*
+**	get the current time in ms to associate it with t0
+*/
 
 long	ft_get_time(long t0)
 {

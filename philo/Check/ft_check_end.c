@@ -6,11 +6,17 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 09:53:36 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 17:05:37 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/26 11:45:02 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
+
+/*
+**	Function used by the thread which monitors the simulation calls
+**	The functions ft_check_if_everyone_has_eaten and ft_check_if_dead
+**	Which check the two conditions which stop the simulation
+*/
 
 void	*ft_check_end(void *ptr)
 {

@@ -6,11 +6,21 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 09:58:02 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 17:35:48 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/09/26 12:01:19 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
+
+/*
+**	End the simulation
+**	If the number of philosophy asked is 1 then we just free 
+**	The philosophy pointer
+**	
+**	============================================================
+**	
+**	free pointers and destroy mutexes
+*/
 
 void	ft_end_simulation(t_data *data)
 {
