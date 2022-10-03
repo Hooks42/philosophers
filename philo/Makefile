@@ -6,11 +6,11 @@
 #    By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/09 15:47:28 by ceatgie           #+#    #+#              #
-#    Updated: 2022/09/21 18:03:21 by ceatgie          ###   ########.fr        #
+#    Updated: 2022/10/03 09:56:06 by ceatgie          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	=	philosophers
+NAME	=	philo
 
 SRCS	=	main.c\
 			Actions/ft_eat.c\
@@ -27,12 +27,13 @@ SRCS	=	main.c\
 			Mutexes/ft_generate_forks.c\
 			Mutexes/ft_lock_mutex.c\
 			Mutexes/ft_unlock_mutex.c\
+			Parsing/ft_check_if_not_number.c\
+			Parsing/ft_check_if_not_null_string.c\
 			Parsing/ft_error_message.c\
-			Parsing/ft_parse_input.c\
-			Philo/ft_add_philo.c\
-			Philo/ft_create_philos.c\
-			Philo/ft_only_one_philo.c\
-			Philo/philosophers.c\
+			Philosophers/ft_add_philo.c\
+			Philosophers/ft_create_philos.c\
+			Philosophers/ft_only_one_philo.c\
+			Philosophers/philosophers.c\
 			Simulation/ft_end_simulation.c\
 			Simulation/ft_start_simulation.c\
 			Threads/ft_create_threads.c\

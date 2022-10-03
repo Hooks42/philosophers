@@ -6,7 +6,7 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 16:46:57 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 17:49:48 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/10/03 11:36:13 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -121,10 +121,11 @@ void	ft_unlock_mutex(pthread_mutex_t *mutex);
 
 //	PARSING
 
+void	ft_check_if_not_number(char *argv[]);
+void	ft_check_if_not_null_number(char *argv[]);
 void	ft_error_message(void);
-void	ft_parse_input(char *argv[]);
 
-//	PHILO
+//	PHILOSOPHERS
 
 t_philo	*ft_add_philo(int id, t_data *data);
 void	ft_create_philos(t_data	*data);

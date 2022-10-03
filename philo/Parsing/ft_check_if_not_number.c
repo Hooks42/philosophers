@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_parse_input.c                                   :+:      :+:    :+:   */
+/*   ft_check_if_not_number.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 17:45:04 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/26 09:24:07 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/10/03 10:21:25 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 **	Check if there is anything other than numbers in the input
 */
 
-void	ft_parse_input(char *argv[])
+void	ft_check_if_not_number(char *argv[])
 {
 	int	i;
 	int	j;
@@ -28,12 +28,7 @@ void	ft_parse_input(char *argv[])
 		while (argv[i][j])
 		{
 			if (!(argv[i][j] >= '0' && argv[i][j] <= '9'))
-			{
-				write(2, RED, ft_strlen(RED));
-				ft_putstr_fd("Error: Please write only number in the ", 2);
-				ft_putstr_fd("program input\n", 2);
-				exit(ERROR_ARGV);
-			}
+				ft_error_msg("Please use only number in the input\n");
 			j++;
 		}
 		j = 0;

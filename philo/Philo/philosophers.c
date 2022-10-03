@@ -6,7 +6,7 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 17:27:51 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/26 10:31:10 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/10/03 09:49:06 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,8 @@ void	philosophers(int argc, char *argv[])
 
 	if (argc < 5 || argc > 6)
 		ft_error_message();
-	ft_parse_input(argv);
+	ft_check_if_not_number(argv);
+	ft_check_if_not_null_string(argv);
 	ft_init(argc, argv, &data);
 	ft_join_threads(&data);
 	ft_usleep(10);

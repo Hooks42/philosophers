@@ -1,32 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_only_one_philo.c                                :+:      :+:    :+:   */
+/*   ft_check_if_null_string.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/19 16:22:10 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/10/03 08:56:50 by ceatgie          ###   ########.fr       */
+/*   Created: 2022/10/03 09:22:13 by ceatgie           #+#    #+#             */
+/*   Updated: 2022/10/03 09:51:17 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
 
-/*
-**	The philosopher takes only one fork then dies
-*/
-
-void	*ft_only_one_philo(void	*ptr)
+void	ft_check_if_not_null_string(char *argv[])
 {
-	t_philo	*philo;
-	t_data	*data;
+	int	i;
 
-	philo = (t_philo *)ptr;
-	data = philo->data;
-	printf("%s%li ms%s | %sPhilo %i %s\n", BLUE, ft_get_time(data->t0),
-		RESET, YELLOW, 1, R_FORK_TAKEN);
-	ft_usleep(data->time_to_die);
-	printf("%s%li ms%s | %sPhilo %i %s\n", BLUE, ft_get_time(data->t0),
-		RESET, RED, 1, DIED);
-	return (NULL);
+	i = 1;
+	while (argv[i])
+	{
+		if (argv[i][0] == '\0' || !argv[i])
+			ft_error_msg("Please don't put null string\n");
+		i++;
+	}
 }
