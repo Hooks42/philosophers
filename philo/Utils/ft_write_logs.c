@@ -6,13 +6,13 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 17:07:54 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/10/03 11:30:42 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/10/03 13:02:33 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
 
-void	ft_write_logs(intz id, char *log, t_data *data)
+void	ft_write_logs(int id, char *log, t_data *data)
 {
 	int		i;
 	char	*color;
@@ -31,8 +31,10 @@ void	ft_write_logs(intz id, char *log, t_data *data)
 		ft_unlock_mutex(&data->logs);
 		return ;
 	}
+	ft_lock_mutex(&data->print);
 	printf("%s%li ms%s | %sPhilo %i %s\n", BLUE, ft_get_time(data->t0),
 		RESET, color, id, log);
 	printf(RESET);
+	ft_unlock_mutex(&data->print);
 	ft_unlock_mutex(&data->logs);
 }

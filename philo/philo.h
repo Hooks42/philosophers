@@ -6,7 +6,7 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 16:46:57 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/10/03 11:36:13 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/10/03 12:59:17 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,7 @@ typedef struct s_data
 	long			t0;
 	int				argc;
 	pthread_t		thread;
+	pthread_mutex_t	print;
 	pthread_mutex_t	*fork;
 	pthread_mutex_t	check_last_meal;
 	pthread_mutex_t	check_everyone_has_eaten;
@@ -122,7 +123,7 @@ void	ft_unlock_mutex(pthread_mutex_t *mutex);
 //	PARSING
 
 void	ft_check_if_not_number(char *argv[]);
-void	ft_check_if_not_null_number(char *argv[]);
+void	ft_check_if_not_null_string(char *argv[]);
 void	ft_error_message(void);
 
 //	PHILOSOPHERS

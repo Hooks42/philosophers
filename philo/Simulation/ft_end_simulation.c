@@ -6,7 +6,7 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 09:58:02 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/26 12:03:47 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/10/03 13:16:56 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,4 +46,5 @@ void	ft_end_simulation(t_data *data)
 	ft_destroy_mutex(&data->check_end);
 	ft_destroy_mutex(&data->check_last_meal);
 	ft_destroy_mutex(&data->check_everyone_has_eaten);
+	ft_destroy_mutex(&data->print);
 }

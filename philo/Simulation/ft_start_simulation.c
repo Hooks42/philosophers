@@ -6,7 +6,7 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 09:25:01 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/26 10:39:50 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/10/03 15:09:06 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ void	*ft_start_simulation(void *ptr)
 	philo = (t_philo *)ptr;
 	data = philo->data;
 	if (philo->philo_id % 2 != 0)
-		ft_usleep(10);
+		ft_usleep(50);
 	while (ft_check_if_philo_die(data))
 	{
 		ft_eat(data, philo);

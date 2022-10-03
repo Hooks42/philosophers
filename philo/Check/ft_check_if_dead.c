@@ -6,7 +6,7 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 09:39:03 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/10/03 11:16:29 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/10/03 13:01:30 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,10 @@ int	ft_check_if_dead(t_data *data, t_philo *philo)
 	ft_unlock_mutex(&data->check_last_meal);
 	if (lastmeal && (ft_get_time(data->t0) - lastmeal) > data->time_to_die)
 	{
+		ft_lock_mutex(&data->print);
 		printf("%s%li ms%s | %sPhilo %i %s\n", BLUE,
 			ft_get_time(data->t0), RESET, RED, philo_id, DIED);
+		ft_unlock_mutex(&data->print);
 		ft_lock_mutex(&data->check_end);
 		data->end = 1;
 		ft_unlock_mutex(&data->check_end);
