@@ -6,7 +6,7 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 09:58:02 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/10/03 13:16:56 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/10/05 15:33:49 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 /*
 **	End the simulation
-**	If the number of philosophy asked is 1 then we just free 
-**	The philosophy pointer
+**	If the number of philosopher asked is 1 then we just free 
+**	The t_philo pointer
 **	
 **	============================================================
 **	

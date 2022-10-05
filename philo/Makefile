@@ -6,7 +6,7 @@
 #    By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/09 15:47:28 by ceatgie           #+#    #+#              #
-#    Updated: 2022/10/03 09:56:06 by ceatgie          ###   ########.fr        #
+#    Updated: 2022/10/05 15:00:26 by ceatgie          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,6 +30,7 @@ SRCS	=	main.c\
 			Parsing/ft_check_if_not_number.c\
 			Parsing/ft_check_if_not_null_string.c\
 			Parsing/ft_error_message.c\
+			Parsing/ft_parsing_manager.c\
 			Philosophers/ft_add_philo.c\
 			Philosophers/ft_create_philos.c\
 			Philosophers/ft_only_one_philo.c\

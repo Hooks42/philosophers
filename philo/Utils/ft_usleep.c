@@ -6,11 +6,15 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 16:20:18 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/21 17:38:49 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/10/05 15:39:41 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
+
+/*
+**	Convert usleep in milliseconds
+*/
 
 void	ft_usleep(long time)
 {

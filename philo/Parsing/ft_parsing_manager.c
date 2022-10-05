@@ -1,33 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_parsing_manager.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/25 12:13:13 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/10/05 14:50:12 by ceatgie          ###   ########.fr       */
+/*   Created: 2022/10/05 14:57:07 by ceatgie           #+#    #+#             */
+/*   Updated: 2022/10/05 15:05:08 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
 
 /*
-**	Compare the ascii caracter between 2 strings
+**	Calls every parsing function
 */
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+void	ft_parsing_manager(int argc, char *argv[])
 {
-	size_t			i;
-	unsigned char	*ptr1;
-	unsigned char	*ptr2;
-
-	i = 0;
-	ptr1 = (unsigned char *)s1;
-	ptr2 = (unsigned char *)s2;
-	if (n == 0)
-		return (0);
-	while (ptr1[i] == ptr2[i] && i < n - 1 && ptr1[i] && ptr2[i])
-		i++;
-	return (((unsigned char *)s1)[i] - ((unsigned char *)s2)[i]);
+	if (argc < 5 || argc > 6)
+		ft_error_message();
+	ft_check_if_not_number(argv);
+	ft_check_if_not_null_string(argv);
 }

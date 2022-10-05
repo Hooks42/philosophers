@@ -6,7 +6,7 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 17:27:51 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/10/03 09:49:06 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/10/05 15:54:57 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,20 +21,16 @@
 **	Then check if there is no error in the input
 **	Then initialize the data structure
 **	Then join the threads
-**	Wait for 10 milliseconds
-**	end up ending the simulation
+**	Then ending the simulation
 */
 
 void	philosophers(int argc, char *argv[])
 {
 	t_data	data;
 
-	if (argc < 5 || argc > 6)
-		ft_error_message();
-	ft_check_if_not_number(argv);
-	ft_check_if_not_null_string(argv);
+	ft_parsing_manager(argc, argv);
 	ft_init(argc, argv, &data);
+	ft_create_philos(&data);
 	ft_join_threads(&data);
-	ft_usleep(10);
 	ft_end_simulation(&data);
 }

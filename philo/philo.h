@@ -6,29 +6,21 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 16:46:57 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/10/03 12:59:17 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/10/05 15:47:36 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PHILO_H
 # define PHILO_H
 
-# include <stdbool.h>
-# include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
-# include <stdarg.h>
-# include <fcntl.h>
 # include <stdio.h>
-# include <ctype.h>
 # include <pthread.h>
 # include <sys/time.h>
 
 //	DEFINES 
 
-# define TRUE 1
-# define FALSE 0
-# define MILISECOND 1000
 # define R_FORK_TAKEN "has taken the right fork"
 # define L_FORK_TAKEN "has taken the left fork"
 # define EATING "is eating"
@@ -38,8 +30,6 @@
 
 //	ERROR
 
-# define ERROR_ARGC 1
-# define ERROR_ARGV 2
 # define MALLOC_ERROR "Malloc error.\n"
 # define MUTEX_ERROR "Creating mutex.\n"
 # define LOCK_MUTEX_ERROR "Locking mutex.\n"
@@ -125,6 +115,7 @@ void	ft_unlock_mutex(pthread_mutex_t *mutex);
 void	ft_check_if_not_number(char *argv[]);
 void	ft_check_if_not_null_string(char *argv[]);
 void	ft_error_message(void);
+void	ft_parsing_manager(int argc, char *argv[]);
 
 //	PHILOSOPHERS
 

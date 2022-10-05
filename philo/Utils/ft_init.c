@@ -6,7 +6,7 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 12:59:34 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/26 08:53:14 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/10/05 15:54:41 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,4 @@ void	ft_init(int argc, char *argv[], t_data *data)
 	data->t0 = 0;
 	if (data->argv[5])
 		data->meal_number = ft_atoi(data->argv[5]);
-	ft_create_philos(data);
 }

@@ -6,11 +6,15 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 09:06:55 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/19 16:36:12 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/10/05 14:48:59 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
+
+/*
+**	Convert String to Int
+*/
 
 static int	ft_isspace(const char *str)
 {

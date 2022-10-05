@@ -6,14 +6,16 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 16:22:10 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/10/03 08:56:50 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/10/05 15:07:18 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
 
 /*
-**	The philosopher takes only one fork then dies
+**	The philosopher takes only one fork
+**	Then he wait time_to_time
+**	Then he die
 */
 
 void	*ft_only_one_philo(void	*ptr)

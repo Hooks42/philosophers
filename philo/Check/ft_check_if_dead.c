@@ -6,7 +6,7 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/21 09:39:03 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/10/03 13:01:30 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/10/05 14:44:08 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 /*
 **	Return 1 or 0 if someone die
-**	Si la date de son dernier repas est superieur au temps qu'il lui faut
-**	Pour mourir sans manger alors le philosopher meurt
+** If the date of his last meal is greater than the time he needs
+** To die without eating then the philosopher dies
 */
 
 int	ft_check_if_dead(t_data *data, t_philo *philo)

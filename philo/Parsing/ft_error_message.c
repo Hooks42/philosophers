@@ -6,7 +6,7 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 17:41:50 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/10/03 14:50:30 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/10/05 15:47:16 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,5 @@ void	ft_error_message(void)
 	ft_putstr_fd("If you like you can add: <number of time each ", 2);
 	ft_putstr_fd("philosopher must eat>\n", 2);
 	write(2, RESET, ft_strlen(RESET));
-	exit(ERROR_ARGC);
+	exit(EXIT_FAILURE);
 }

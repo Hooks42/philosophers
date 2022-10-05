@@ -6,7 +6,7 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 17:39:03 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/10/03 11:30:34 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/10/05 14:35:34 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 **	Call function ft_lock_forks
 **	So the philosopher can take left and right fork
 **	Set the time of the actual meal
+**	Eat durring time_to_eat time
 **	Then put the forks back on the table
 **	
 **	===========================================================

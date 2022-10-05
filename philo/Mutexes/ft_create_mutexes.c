@@ -6,15 +6,15 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 16:58:46 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/10/03 13:00:33 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/10/05 14:52:24 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
 
 /*
-**	Create the mutex for the forks and
-**	all the mutexes for the check variables
+**	Create mutex array of nb_philo size for the forks and
+**	Create all the mutexes
 */
 
 void	ft_create_mutexes(t_data *data)

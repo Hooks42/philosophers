@@ -6,11 +6,15 @@
 /*   By: ceatgie <ceatgie@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 08:39:00 by ceatgie           #+#    #+#             */
-/*   Updated: 2022/09/14 18:09:14 by ceatgie          ###   ########.fr       */
+/*   Updated: 2022/10/05 14:49:39 by ceatgie          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../philo.h"
+
+/*
+**	Calculate lengh of the given string
+*/
 
 size_t	ft_strlen(const char *str)
 {
